@@ -1,12 +1,27 @@
+import { useState } from "react";
 import styled from "styled-components";
-import Circle from "./Circle";
+
+const Container = styled.div`
+  background-color: ${(props) => props.theme.bgColor};
+`;
+const H1 = styled.h1`
+  color: ${(props) => props.theme.textColor};
+`;
+
+interface DummyProps {
+  text: string;
+  active?: boolean;
+}
+
+function Dummy({ text, active = false }: DummyProps) {
+  return <H1>{text}</H1>;
+}
 
 function App() {
   return (
-    <div>
-      <Circle borderColor="green" bgColor="tomato" />
-      <Circle text="im here" bgColor="teal" />
-    </div>
+    <Container>
+      <Dummy active text="hi" />
+    </Container>
   );
 }
 
