@@ -18,9 +18,16 @@ function Dummy({ text, active = false }: DummyProps) {
 }
 
 function App() {
+  const onClick = (event: React.FormEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    console.log("clicked!");
+  };
   return (
     <Container>
       <Dummy active text="hi" />
+      <form>
+        <button onClick={onClick}>Click Me!</button>
+      </form>
     </Container>
   );
 }
