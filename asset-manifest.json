@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/my-mini-netflix/static/js/main.0fd67827.js",
+    "index.html": "/my-mini-netflix/index.html",
+    "main.0fd67827.js.map": "/my-mini-netflix/static/js/main.0fd67827.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.0fd67827.js"
+  ]
+}
